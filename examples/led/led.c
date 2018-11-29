@@ -22,7 +22,7 @@ static void wifi_init() {
     sdk_wifi_station_connect();
 }
 
-const int led_gpio = 2;
+const int led_gpio = 16; // LED_BUILTIN for ESP 1.0 Dev Board
 bool led_on = false;
 
 void led_write(bool on) {
